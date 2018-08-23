@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<div class="box">
+	<div class="box one">
 		<section class="slide-prev">前一张</section>
 		<section class="slide-next">下一张</section>
 		<ul>
@@ -37,7 +37,7 @@
 			</li>
 		</ul>
 	</div>
-	<div class="box">
+	<div class="box two">
 		<section class="slide-prev">前一张</section>
 		<section class="slide-next">下一张</section>
 		<ul>
@@ -78,7 +78,14 @@
 		// 	console.log(2)
 		// 	Next()
 		// })
-		$('.box').ZYSlide({speed:1000});
+		jQuery.noConflict();
+		// jQuery('.box').ZYSlide({speed:1000}).css('background-color','black');
+		// 两个不同的轮播
+		jQuery('.one').ZYSlide({delay:2000,speed:3000}).css('background-color','pink');
+		jQuery('.two').ZYSlide({speed:3000}).css('background-color','hotpink');
+
+
+
 	</script>
 </body>
 
