@@ -11,8 +11,8 @@
 
 <body>
 	<div id="box">
-		<section class="prev">前一张</section>
-		<section class="next">下一张</section>
+		<section class="slide-prev">前一张</section>
+		<section class="slide-next">下一张</section>
 		<ul>
 			<li>
 				<img src="images/1.jpg" alt="轮播图片">
@@ -38,19 +38,20 @@
 		</ul>
 	</div>
 	<script src="js/jquery-3.3.1.js"></script>
-	<script src="js/index.js"></script>
+	<script src="js/Jquery-ZYSlide.js"></script>
 	<script>
-		// 点击前一张
-		$('.prev').click(function () {
-			console.log(1);
-			Prev();
-		})
+		// // 点击前一张
+		// $('.prev').click(function () {
+		// 	console.log(1);
+		// 	Prev();
+		// })
 
-		// 点击后一张
-		$('.next').click(function () {
-			console.log(2)
-			Next()
-		})
+		// // 点击后一张
+		// $('.next').click(function () {
+		// 	console.log(2)
+		// 	Next()
+		// })
+		$('#box').ZYSlide();
 	</script>
 </body>
 
